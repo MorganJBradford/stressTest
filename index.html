@@ -8,5 +8,47 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Transportation Survey</h1>
+    </div>
+    <form id="stress-test">
+      <div class="form-group">
+        <p>In the last 3 months, which of the following signs have you experienced at least 4 days a week:</p>
+        <input type="checkbox" name="sign" value="1">Insomnia (difficulty sleeping).<br>
+        <input type="checkbox" name="sign" value="1">Becoming Easily Agitated.<br>
+        <input type="checkbox" name="sign" value="1">Difficulty Relaxing.<br>
+        <input type="checkbox" name="sign" value="1">Feeling Frustrated.<br>
+        <input type="checkbox" name="sign" value="1">Grinding Teeth.<br>
+        <input type="checkbox" name="sign" value="1">Fatigue.<br>
+      </div>
+      <div class="form-group">
+        <p>In the last 3 months, which of the following symptoms have you experienced at least 4 days a week:</p>
+        <input type="checkbox" name="symptom" value="1">Insomnia (difficulty sleeping).<br>
+        <input type="checkbox" name="symptom" value="1">Aches and pains.<br>
+        <input type="checkbox" name="symptom" value="1">Depression.<br>
+        <input type="checkbox" name="symptom" value="1">Headaches.<br>
+        <input type="checkbox" name="symptom" value="1">Diarrhea or constipation.<br>
+      </div>
+      <div class="form-group">
+        <p>In the last 3 months, which of the following stress reducing methods have you practiced at least 4 days a week:</p>
+        <input type="checkbox" name="relief" value="-1">Meditate.<br>
+        <input type="checkbox" name="relief" value="-1">Religious practice.<br>
+        <input type="checkbox" name="relief" value="-1">Exercise.<br>
+        <input type="checkbox" name="relief" value="-1">Decrease caffeine intake.<br>
+        <input type="checkbox" name="relief" value="-1">Journaling.<br>
+      </div>
+      <button type="submit">Submit Survey</button>
+    </form>
+    <span id="mild-stress">
+      <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+    </span>
+    <span id="significant-stress">
+      <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+    </span>
+    <span id="what-stress">
+      <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+    </span>
+  </div>
 </body>
 </html>

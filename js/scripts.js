@@ -1,13 +1,7 @@
 $(document).ready(function() {
   $("form#stress-test").submit(function(event) {
     event.preventDefault();
-    let userResponses = []
-    let tally = [];
-    for (let i = 0; i < userResponses.length; i += 2) {
-      for (let j = 1; i < userResponses.length; i += 2) {
-      tally.push(userResponses[i] + userResponses[j]);
-      }
-    }
+    let userResponses = [];
     
     $("#test-responses").show();
     $("input:checkbox[name=sign]:checked").each(function() {
@@ -22,15 +16,19 @@ $(document).ready(function() {
       const reliefActivity = parseInt($(this).val());
       userResponses.push(reliefActivity);
     });
+
+    let tally = 0;
+    for (let i = 0; i < userResponses.length; i += 1) {
+      tally += userResponses[i];
+    }
     
-    $('#stress-test').hide();
-    
-    //if () {
-    //  $("#mild-stress").show();
-    //} else if () {
-    //  $("#significant-stress").show();
-    //} else {
-    //  $("#what-stress").show();
-   // }
+    $("#stress-test").hide();
+    if (tally > 5) {
+      $("#significant-stress").show();
+    } else if (tally < 5 && tally > 2) {
+      $("#mild-stress").show();
+    } else {
+      $("#what-stress").show();
+    }
   });
 });

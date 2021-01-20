@@ -1,15 +1,15 @@
-# _{Application Name}_
+# _Cumulative Stress Test_
 
-#### _{Brief description of application}_
+#### _A test designed to take in multiple factors contributing to stress, and provide a stress relief recommendation based on the results_
 
-#### By _**{List of contributors}**_
+#### By _**Morgan Bradford**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _JavaScript_
+* _jQuery_
 
 ## Description
 
@@ -27,8 +27,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _README.md incomplete_
+* _Project in infancy state_
 
 ## License
 
